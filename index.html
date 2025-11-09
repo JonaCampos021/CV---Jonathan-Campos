@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional - Jonathan Campos</title>
+    <link rel="icon" href="cv.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="scan-line"></div>
+    
+    <!-- Cámaras flotantes en el fondo -->
+    <div class="camera-icon" style="top: 10%; left: 5%;"><i class="fas fa-video"></i></div>
+    <div class="camera-icon" style="top: 20%; left: 90%;"><i class="fas fa-camera"></i></div>
+    <div class="camera-icon" style="top: 70%; left: 10%;"><i class="fas fa-video"></i></div>
+    <div class="camera-icon" style="top: 80%; left: 85%;"><i class="fas fa-camera"></i></div>
+    <div class="camera-icon" style="top: 40%; left: 15%;"><i class="fas fa-video"></i></div>
+    <div class="camera-icon" style="top: 60%; left: 80%;"><i class="fas fa-camera"></i></div>
+
+    <div class="container">
+        <header class="header-content">
+            <img src="jona.jpg" alt="Foto" class="profile-photo">
+            
+            <div class="header-text">
+                <h1 class="name">JONATHAN ESTIVEN CAMPOS RODRIGUEZ</h1>
+                <h2 class="title">ESTUDIANTE DE INGENIERÍA EN SISTEMAS Y REDES INFORMÁTICAS</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i> 21 años        
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i> 7560-5595
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i> jonacampos021@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i> Colonia Ciudad Pacífica, Pol 8-A. Casa #86, Segunda Etapa, San Miguel.
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section about-me">
+            <h2 class="section-title">SOBRE MI</h2>
+            <p>Me considero una persona curiosa, autodidacta, proactiva y motivada, con una actitud de aprendizaje continuo y en búsqueda de nuevas oportunidades con el propósito de fortalecer mis capacidades así como también adquirir habilidades y conocimientos. Me caracterizo por mi sentido de responsabilidad, adaptabilidad, capacidad de trabajo en equipo, práctica y compromiso con aportar valor en el entorno laboral. Enfocado en el crecimiento profesional, la mejora constante y el desarrollo tanto personal como laboral.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">FORMACIÓN ACADÉMICA</h2>
+            <table class="education-table">
+                <tr>
+                    <th>Institución</th>
+                    <th>Grado Académico</th>
+                    <th>Periodo</th>
+                    <th>Título</th>
+                </tr>
+                <tr>
+                    <td>Liceo San Miguel</td>
+                    <td>Bachillerato</td>
+                    <td>2021 - 2022</td>
+                    <td><a href="#" class="view-diploma-btn" data-cert="bachiller"><i class="fas fa-file-alt"></i> Ver título</a></td>
+                </tr>
+                <tr>
+                    <td>Universidad Gerardo Barrios</td>
+                    <td>Ingeniería en Sistemas y Redes Informáticas</td>
+                    <td>2023 - En curso</td>
+                    <td><a href="#" class="view-diploma-btn"><i class="fas fa-file-alt"></i> En Curso</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">CONOCIMIENTOS</h2>
+            <div class="skills-container">
+                <span class="skill"><i class="fas fa-laptop-code"></i> Manejo de equipo informático</span>
+                <span class="skill"><i class="fas fa-file-alt"></i> Manejo básico de paqueteria office</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">HABILIDADES</h2>
+            <div class="skills-container">
+                <span class="skill"><i class="fas fa-comments"></i> Buena comunicación</span>
+                <span class="skill"><i class="fas fa-check-circle"></i> Responsable</span>
+                <span class="skill"><i class="fas fa-bolt"></i> Actitud proactiva</span>
+                <span class="skill"><i class="fas fa-book"></i> Autodidacta</span>
+                <span class="skill"><i class="fas fa-random"></i> Adaptabilidad</span>
+                <span class="skill"><i class="fas fa-users"></i> Trabajo en equipo</span>
+                <span class="skill"><i class="fas fa-folder-open"></i> Organizado</span>
+                <span class="skill"><i class="fas fa-search"></i> Atención al detalle</span>
+            </div>
+        </section>
+   
+        <footer>
+            <p>© 2025 Jonathan Estiven Campos Rodríguez - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <!-- Modal para mostrar el título de bachiller -->
+    <div id="certModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="certImage" src="" alt="Título de Bachiller">
+        </div>
+    </div>
+
+    <div class="floating-buttons">
+        <button class="floating-btn theme" id="themeToggle">
+            <i class="fas fa-moon"></i>
+            <span class="tooltip">Cambiar tema</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
